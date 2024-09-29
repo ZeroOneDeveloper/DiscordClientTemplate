@@ -7,7 +7,7 @@
 
 ## Installation
 ```shell
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 Create an `.env` file.
 ```dotenv
