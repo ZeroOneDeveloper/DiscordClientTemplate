@@ -10,8 +10,8 @@ class Core(commands.Cog):
 
     @commands.command(name="핑", aliases=["ping"])
     async def ping(self, ctx: Context):
-        await ctx.reply("Pong! 🏓")
+        await ctx.reply(f"Pong! 🏓 `{round(self.bot.latency * 1000)}ms`")
 
 
-def setup(bot: Client):
-    bot.add_cog(Core(bot))
+async def setup(bot: Client):
+    await bot.add_cog(Core(bot))
