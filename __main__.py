@@ -19,7 +19,7 @@ class Client(commands.AutoShardedBot):
             if i.endswith(".py"):
                 await self.load_extension(f"extensions.{i[:-3]}")
                 print(f"Loaded {i}")
-        await self.tree.sync(guild=Object(id=866250605815136276))
+        await self.tree.sync(guild=None)
 
 
 if __name__ == "__main__":
